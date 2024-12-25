@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration Add New Hotel Di BOBO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .text-3xl {
+      font-size: 2rem;
+    }
+    .font-bold {
+      font-weight: bold;
+    }
+    .mb-5 {
+      margin-bottom: 1.25rem;
+    }
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+    .table-auto {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .border {
+      border: 1px solid #ccc;
+    }
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .bg-gray-200 {
+      background-color: #f3f4f6;
+    }
+    .bg-green-500 {
+      background-color: #48bb78;
+    }
+    .bg-red-500 {
+      background-color: #f56565;
+    }
+    .bg-blue-500 {
+      background-color: #4299e1;
+    }
+    .hover\:bg-green-700:hover {
+      background-color: #2f855a;
+    }
+    .hover\:bg-red-700:hover {
+      background-color: #c53030;
+    }
+    .hover\:bg-blue-700:hover {
+      background-color: #2b6cb0;
+    }
+    .text-white {
+      color: #fff;
+    }
+    .rounded {
+      border-radius: 0.375rem;
+    }
+    .w-full {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-3xl font-bold mb-5">Welcome to the Hotel Administration</h1>
+    <p class="text-lg mb-4">Plis gwe pengen tidur, add hotel sekarang</p>
+
+    <!-- Tabel CRUD -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Hotel Management</h2>
+      <table class="table-auto w-full border-collapse border border-gray-300">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="border border-gray-300 px-4 py-2">ID</th>
+            <th class="border border-gray-300 px-4 py-2">Hotel Name</th>
+            <th class="border border-gray-300 px-4 py-2">Address</th>
+            <th class="border border-gray-300 px-4 py-2">Price</th>
+            <th class="border border-gray-300 px-4 py-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Replace this section with real data -->
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">1</td>
+            <td class="border border-gray-300 px-4 py-2">INDIGO Hotel Bandung</td>
+            <td class="border border-gray-300 px-4 py-2">Bandung, Dago</td>
+            <td class="border border-gray-300 px-4 py-2">IDR 205.000</td>
+            <td class="border border-gray-300 px-4 py-2 space-x-2">
+              <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Confirm</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Form Penambahan Hotel -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Add New Hotel</h2>
+      <form>
+        <div>
+          <label class="block font-medium mb-1">Hotel ID</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter hotel ID" required />
+        </div>
+        <div>
+          <label class="block font-medium mb-1">Hotel Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter hotel name" required />
+        </div>
+        <div>
+          <label class="block font-medium mb-1">Address</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter hotel address" required />
+        </div>
+        <div>
+          <label class="block font-medium mb-1">Price</label>
+          <input type="number" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter hotel price" required />
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700">Add Hotel</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

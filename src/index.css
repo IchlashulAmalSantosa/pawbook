@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-hero {
+    background-image: url('./assets/13670.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  body {
+    @apply font-poppins;
+  }
+  
